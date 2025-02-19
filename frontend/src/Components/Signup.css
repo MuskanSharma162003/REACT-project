@@ -1,0 +1,134 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #e4e4e4, #c4d8f1);
+    color: #333;
+  }
+  
+
+  #signupheading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  #signupheading h1 {
+    margin-top: 30px;
+    font-size: 2.5em;
+    color: #222;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  }
+  
+  #signupform {
+    width: 35%;
+    margin: 60px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  #signupform h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 28px;
+    color: #444;
+    font-weight: 600;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+  }
+  
+  .div {
+    margin-bottom: 25px;
+  }
+  
+  .div label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+    font-size: 1.1em;
+  }
+  
+  .div input[type="text"],
+  .div input[type="email"],
+  .div input[type="password"],
+  .div textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    background: #f9f9f9;
+    transition: all 0.3s ease;
+  }
+  
+  .div input[type="text"]:focus,
+  .div input[type="email"]:focus,
+  .div input[type="password"]:focus,
+  div textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+  }
+  
+
+  .div input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .div input[type="submit"]:hover {
+    background: linear-gradient(90deg, #0056b3, #007bff);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 91, 187, 0.4);
+  }
+  
+ 
+  @media (max-width: 768px) {
+    #signupform {
+      width: 80%;
+    }
+  
+    #signupform h1 {
+      font-size: 24px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #signupform {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    #signupform h1 {
+      font-size: 20px;
+    }
+  }
+  
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
